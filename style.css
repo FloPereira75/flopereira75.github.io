@@ -1,0 +1,297 @@
+/* GENERAL */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    font-family: 'Titillium Web', sans-serif;
+    color: #3f3844;
+}
+body {
+    position: relative;
+}
+
+.wrap {
+    min-height: 100%;
+    position: relative;
+}
+
+#flchup {
+    position: fixed;
+    right: 1em;
+    bottom: 4em;
+    z-index: 1;
+}
+
+.me-contacter {
+    height: 75px;
+    width: 225px;
+    background-color: #3f3844;
+    position: fixed;
+    top: 35vh;
+    left: -155px;
+    font-size: 0.88em;
+    transition: 0.5s;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.me-contacter:hover { 
+    left: 0;
+}
+.me-contacter p {
+    display: inline;
+    margin-top: 4px;
+    margin-left: 7.5px;
+    color: white;
+    position: absolute;
+    top: 25px;
+}
+.me-contacter a > p:hover {
+    color: yellow;
+}
+#cntct {
+    position: absolute;
+    left: 155px;
+    font-weight: bold;
+}
+/* HEADER */
+
+.entete {
+    height: 10vh;
+    background-color: #3f3844;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#lien {
+    position: relative;
+    top: 2.5vh;
+    left: 3.5vh;
+}
+.navmenu {
+    position: absolute;
+    height: 10vh;
+    right: 10vh;
+    top: 0;
+}
+nav {
+    
+}
+nav ul {
+    list-style-type : none;
+}
+nav ul li {
+    display: inline;
+    padding : 0 1em;
+}
+
+.entete a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.15em;
+    /* text-transform: uppercase; */
+}
+.entete a:hover {
+    color: yellow;
+}
+
+/* WELCOME */
+
+#wlcome h2 {
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 5.5em;
+}
+#wlcome {
+    position: relative;
+    height: 100vh;
+}
+#wlcome img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+}
+
+#wlcome p {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 2.75em;
+    text-transform: uppercase;
+}
+
+/* PORTRAIT */
+
+#info {
+    height : 100vh;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+.wrap-info {
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    height: 65vh;
+    width: 500px;
+    border-radius: 150px;
+    position: relative;
+    left: 75px;
+    display: inline-block;
+    transition: box-shadow .7s;
+}
+.wrap-info:hover {
+    box-shadow: 0 0 25px #3f3844;
+}
+
+#info h2 {
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+    font-size: 4.5em;
+    position: relative;
+}
+
+#info .aside-gauche {
+    position: relative;
+    text-align: center;
+}
+#info h3 {
+    padding-top: 25px;
+    text-decoration: underline;
+    position: relative;
+}
+.form-gras {
+    font-weight: bold;
+}
+.wrap-bio {
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    height: 65vh;
+    width: 500px;
+    border-radius: 150px;
+    position: absolute;
+    right: 75px;
+    display: inline-block;
+    transition: box-shadow .7s;
+}
+
+.wrap-bio:hover {
+    box-shadow: 0 0 25px #3f3844;
+}
+#info .aside-droit {
+    text-align: center;
+}
+
+/* PARCOURS ET COMPETENCES */
+
+.exp {
+    height: 100vh;
+    width: 100%;
+}
+
+.exp h2 {
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+    font-size: 4.5em;
+    position: relative;
+}
+
+.exp h3 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.35em;
+}
+
+.xperience img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.exp p {
+    font-size: 0.925em;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#paddinghaut {
+    /* border-top: #3f3844 solid 1px; */
+    padding-top: 20px;
+}
+
+/* Bordure sous "Gardien d'immeuble" */
+#bordurebas {
+    border-bottom: #3f3844 solid 1px;
+    padding-bottom: 20px;
+}
+
+.xperience {
+    height: 70vh;
+    width: 400px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    left: 150px;
+    /* border: #3f3844 1px solid; */
+    border-radius: 25px;
+    transition: box-shadow .7s;
+}
+
+.xperience:hover {
+    box-shadow: 0 0 50px #3f3844;
+}
+
+.wrap-xperience {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.cptence {
+    /* height: 70vh; */
+    width: 400px;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    right: 150px;
+    /* border: #3f3844 2px solid; */
+    border-radius: 25px;
+    transition: box-shadow .7s;
+}
+
+.cptence:hover {
+    box-shadow: 0 0 50px #3f3844;
+}
+
+.cptence img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wrap-cptence {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    position: relative;
+    bottom: 0;
+    height: 10vh;
+    line-height: 10vh;
+    width: 100%;
+}
+footer p {
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
