@@ -82,9 +82,6 @@ body {
     right: 10vh;
     top: 0;
 }
-nav {
-    
-}
 nav ul {
     list-style-type : none;
 }
@@ -93,6 +90,8 @@ nav ul li {
     padding : 0 1em;
 }
 
+
+
 .entete a {
     text-decoration: none;
     color: white;
@@ -100,6 +99,9 @@ nav ul li {
     font-size: 1.15em;
 }
 .entete a:hover {
+    color: yellow;
+}
+.entete a:focus {
     color: yellow;
 }
 
@@ -225,7 +227,6 @@ nav ul li {
 }
 
 #paddinghaut {
-    /* border-top: #3f3844 solid 1px; */
     padding-top: 20px;
 }
 
@@ -242,7 +243,6 @@ nav ul li {
     display: inline-block;
     position: relative;
     left: 150px;
-    /* border: #3f3844 1px solid; */
     border-radius: 25px;
     transition: box-shadow .7s;
 }
@@ -263,7 +263,6 @@ nav ul li {
     display: inline-block;
     position: absolute;
     right: 150px;
-    /* border: #3f3844 2px solid; */
     border-radius: 25px;
     transition: box-shadow .7s;
 }
@@ -283,6 +282,33 @@ nav ul li {
     margin-right: 25px;
 }
 
+
+/* PROJETS */
+
+.projets {
+    min-height: 100vh;
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+.projets h2 {
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+    font-size: 4.5em;
+    position: relative;
+}
+.projets h3 {
+    font-size: 1.5em;
+}
+.projets img {
+    height: 350px;
+    width: 500px;
+}
+.wrap-taupe {
+    text-align: center;
+}
 /* FOOTER */
 
 footer {
