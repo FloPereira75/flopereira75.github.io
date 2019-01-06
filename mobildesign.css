@@ -6,12 +6,23 @@
     .wrap {
         overflow:hidden;
     }
+    
     .me-contacter {
-        /* display: none; */
+        opacity: 0.5;
     }
-    /* .me-contacter:hover { 
-        left: auto;
-    } */
+
+    #flchup {
+        position: fixed;
+        right: 1em;
+        bottom: 85px;
+    }
+
+    #print-cv {
+        position: fixed;
+        left: 1em;
+        bottom: 85px;
+    }
+    
 
     /* HEADER */
 
@@ -100,8 +111,8 @@
 
     /* PARCOURS ET COMPETENCES */
     .exp {
-        padding-bottom: 45vh;
-        height: 875px;
+        padding-bottom: 50px;
+        height: auto;
     }
     .exp h2 {
         font-size: 3em;
