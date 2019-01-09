@@ -2,7 +2,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    /* height: 100%; */
     background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
     font-family: 'Titillium Web', sans-serif;
     color: #3f3844;
@@ -89,9 +89,6 @@ nav ul li {
     display: inline;
     padding : 0 1em;
 }
-
-
-
 .entete a {
     text-decoration: none;
     color: white;
@@ -99,9 +96,6 @@ nav ul li {
     font-size: 1.15em;
 }
 .entete a:hover {
-    color: yellow;
-}
-.entete a:focus {
     color: yellow;
 }
 
@@ -122,14 +116,28 @@ nav ul li {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5vh;
+    margin-top: 15px;
 }
 
-#wlcome p {
+.wrap-txt-accueil {
+    height: 180px;
+    width: 375px;
+    border-radius: 3px;
+    margin: 0 auto;
+    transition: box-shadow .3s;
+}
+.wrap-txt-accueil:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* .wrap-txt-accueil p {
+    padding: 15px 30px;
     text-align: center;
-    padding-top: 5px;
-    font-size: 2.75em;
-    text-transform: uppercase;
+    font-size: 1.4em;
+} */
+
+.gras-flo-welcome {
+    font-size: 1.45em;
 }
 
 /* PORTRAIT */
@@ -137,21 +145,21 @@ nav ul li {
 #info {
     height : 100vh;
     width: 100%;
-    background-color: white;
+    /* background-color: white; */
     position: relative;
 }
 .wrap-info {
-    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    /* background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); */
     height: 65vh;
     width: 500px;
-    border-radius: 50px;
+    border-radius: 3px;
     position: relative;
     left: 75px;
     display: inline-block;
-    transition: box-shadow .7s;
+    transition: box-shadow .3s;
 }
 .wrap-info:hover {
-    box-shadow: 0 0 25px #3f3844;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 #info h2 {
@@ -171,22 +179,23 @@ nav ul li {
     padding-top: 25px;
     text-decoration: underline;
     position: relative;
+    text-align: center;
 }
 .form-gras {
     font-weight: bold; /* Met en gras la partie gauche du formulaire */
 }
 .wrap-bio {
-    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    /* background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); */
     height: 65vh;
     width: 500px;
-    border-radius: 50px;
+    border-radius: 3px;
     position: absolute;
     right: 75px;
     display: inline-block;
-    transition: box-shadow .7s;
+    transition: box-shadow .3s;
 }
 .wrap-bio:hover {
-    box-shadow: 0 0 25px #3f3844;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 #info .aside-droit {
     text-align: center;
@@ -239,16 +248,16 @@ nav ul li {
 .xperience {
     height: 70vh;
     width: 400px;
-    background-color: white;
+    /* background-color: white; */
     display: inline-block;
     position: relative;
     left: 150px;
-    border-radius: 25px;
-    transition: box-shadow .7s;
+    border-radius: 3px;
+    transition: box-shadow .3s;
 }
 
 .xperience:hover {
-    box-shadow: 0 0 50px #3f3844;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .wrap-xperience {
@@ -259,16 +268,16 @@ nav ul li {
 .cptence {
     height: 70vh;
     width: 400px;
-    background-color: white;
+    /* background-color: white; */
     display: inline-block;
     position: absolute;
     right: 150px;
-    border-radius: 25px;
-    transition: box-shadow .7s;
+    border-radius: 3px;
+    transition: box-shadow .3s;
 }
 
 .cptence:hover {
-    box-shadow: 0 0 50px #3f3844;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .cptence img {
@@ -287,7 +296,7 @@ nav ul li {
 
 .projets {
     min-height: 100vh;
-    background-color: white;
+    /* background-color: white; */
     padding-bottom: 50px;
 }
 

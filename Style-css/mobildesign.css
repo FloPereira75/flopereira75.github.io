@@ -55,9 +55,28 @@
 
     #wlcome h2 {
         font-size: 4em;
+        padding-bottom: 25px;
     }
     #wlcome p {
         font-size: 1.5em;
+    }
+    .gras-flo-welcome {
+        font-size: 1em;
+    }
+    .wrap-txt-accueil {
+        height: 250px;
+        margin-top: 50px;
+    }
+    .wrap-txt-accueil p {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .gras-flo-welcome {
+        font-size: 1.35em;
+    }
+
+    .wrap-txt-accueil:hover {
+        box-shadow: none;
     }
 
     /* PORTRAIT */
@@ -77,7 +96,7 @@
     }
 
     .wrap-info {
-        height: 40vh;
+        height: 400px;
         width: 100%;
         position: relative;
         left: 0;
@@ -91,7 +110,7 @@
         display: none;
     }
     .wrap-bio {
-        height: 40vh;
+        height: 500px;
         width: 100%;
         position: relative;
         left: 0;
@@ -104,11 +123,25 @@
     .wrap-bio img {
         display: none;
     }
+    .aside-gauche {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    #info .aside-droit {
+        text-align: inherit;
+    }
+    #info .aside-gauche {
+        text-align: inherit;
+    }
+    .aside-droit {
+        padding-left: 35px;
+        padding-right: 35px;
+        text-align: inherit;
+    } 
 
     /* PARCOURS ET COMPETENCES */
 
     .exp {
-        padding-bottom: 50px;
         height: auto;
     }
     .exp h2 {
@@ -121,14 +154,19 @@
         font-size: 1.1em;
     }
     .xperience {
-    height: 60vh;
-    width: 100%;
-    background-color: transparent;
-    display: inline-block;
-    position: relative;
-    left: 0;
-    border-radius: 0;
-    padding-bottom: 7.5vh;
+        height: 625px;
+        width: 100%;
+        background-color: transparent;
+        display: inline-block;
+        position: relative;
+        left: 0;
+        border-radius: 0;
+    }
+    .wrap-xperience {
+        padding-left: 35px;
+        padding-right: 35px;
+        margin-right: 0;
+        margin-left: 0;
     }
     .xperience:hover {
         box-shadow: none;
@@ -137,13 +175,19 @@
         display: none;
     }
     .cptence {
-    height: 60vh;
-    width: 100%;
-    background-color: transparent;
-    display: inline-block;
-    position: relative;
-    left: 0;
-    border-radius: 0;
+        height: 600px;
+        width: 100%;
+        background-color: transparent;
+        display: inline-block;
+        position: relative;
+        left: 0;
+        border-radius: 0;
+    }
+    .wrap-cptence {
+        padding-left: 35px;
+        padding-right: 35px;
+        margin-right: 0;
+        margin-left: 0;
     }
     .cptence:hover {
         box-shadow: none;
@@ -151,11 +195,34 @@
     .cptence img {
         display: none;
     }
+    
 
     /* PROJETS */
+
+    .projets {
+        min-height: 0;
+    }
+
+    .projets h2 {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .wrap-taupe {
+        height: 600px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .div-jeutaupe {
+        text-align: initial;    
+    }
 
     .projets img {
         height: 200px;
         width: 300px;
     }
 }
+
+
+
