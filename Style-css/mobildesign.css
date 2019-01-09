@@ -18,9 +18,6 @@
     }
 
     #print-cv {
-        position: fixed;
-        left: 1em;
-        bottom: 85px;
         display: none;
     }
     
