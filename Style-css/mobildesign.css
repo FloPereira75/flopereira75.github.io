@@ -21,6 +21,7 @@
         position: fixed;
         left: 1em;
         bottom: 85px;
+        display: none;
     }
     
 
@@ -53,6 +54,9 @@
 
     /* WELCOME */
 
+    #wlcome {
+        height: auto;
+    }
     #wlcome h2 {
         font-size: 4em;
         padding-bottom: 25px;
