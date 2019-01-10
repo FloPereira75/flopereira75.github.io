@@ -23,12 +23,6 @@ body {
     bottom: 4em;
 }
 
-#print-cv {
-    position: fixed;
-    left: 1em;
-    bottom: 4em;
-}
-
 .me-contacter {
     height: 75px;
     width: 225px;
@@ -110,7 +104,7 @@ nav ul li {
 }
 #wlcome {
     position: relative;
-    height: 100vh;
+    height: 600px;
 }
 #wlcome img {
     display: block;
@@ -125,16 +119,12 @@ nav ul li {
     border-radius: 3px;
     margin: 0 auto;
     transition: box-shadow .3s;
+    text-align: center;
+    font-size: 2.15em;
 }
 .wrap-txt-accueil:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
-
-/* .wrap-txt-accueil p {
-    padding: 15px 30px;
-    text-align: center;
-    font-size: 1.4em;
-} */
 
 .gras-flo-welcome {
     font-size: 1.45em;
@@ -143,22 +133,19 @@ nav ul li {
 /* PORTRAIT */
 
 #info {
-    height : 100vh;
+    height : 700px;
     width: 100%;
-    /* background-color: white; */
+    background-color: white;
     position: relative;
 }
 .wrap-info {
-    /* background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); */
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
     height: 65vh;
     width: 500px;
     border-radius: 3px;
     position: relative;
     left: 75px;
     display: inline-block;
-    transition: box-shadow .3s;
-}
-.wrap-info:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -171,9 +158,17 @@ nav ul li {
     position: relative;
 }
 
-#info .aside-gauche {
-    position: relative;
+.image-info {
     text-align: center;
+    padding-top: 25px;
+}
+.div-aside-info-p {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+.aside-gauche a {
+    text-decoration: none;
+    color: red;
 }
 #info h3 {
     padding-top: 25px;
@@ -185,26 +180,33 @@ nav ul li {
     font-weight: bold; /* Met en gras la partie gauche du formulaire */
 }
 .wrap-bio {
-    /* background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); */
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
     height: 65vh;
     width: 500px;
     border-radius: 3px;
     position: absolute;
     right: 75px;
     display: inline-block;
-    transition: box-shadow .3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
+    /* transition: box-shadow .3s; */
 }
-.wrap-bio:hover {
+/* .wrap-bio:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-#info .aside-droit {
+} */
+
+.image-bio {
     text-align: center;
+    padding-top: 25px
+}
+.div-aside-bio-p {
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
 /* PARCOURS ET COMPETENCES */
 
 .exp {
-    height: 100vh;
+    height: 800px;
     width: 100%;
 }
 
@@ -226,7 +228,8 @@ nav ul li {
 .xperience img {
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    padding-top: 25px;
 }
 
 .exp p {
@@ -246,57 +249,68 @@ nav ul li {
 }
 
 .xperience {
-    height: 70vh;
+    height: 550px;
     width: 400px;
-    /* background-color: white; */
+    background-color: white;
     display: inline-block;
     position: relative;
     left: 150px;
     border-radius: 3px;
-    transition: box-shadow .3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
+    /* transition: box-shadow .3s; */
 }
 
-.xperience:hover {
+/* .xperience:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .wrap-xperience {
-    margin-left: 25px;
-    margin-right: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .cptence {
-    height: 70vh;
+    height: 550px;
     width: 400px;
-    /* background-color: white; */
+    background-color: white;
     display: inline-block;
     position: absolute;
     right: 150px;
     border-radius: 3px;
-    transition: box-shadow .3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
+    /* transition: box-shadow .3s; */
 }
 
-.cptence:hover {
+/* .cptence:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .cptence img {
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    padding-top: 25px;
 }
 
 .wrap-cptence {
-    margin-left: 25px;
-    margin-right: 25px;
+    padding-left: 35px;
+    padding-right: 35px
 }
 
+.logoinformatique {
+    display: flex;
+    height: 125px;;
+}
+.logoinformatique img {
+    height: 70px;
+    width: 70px;
+}
 
 /* PROJETS */
 
 .projets {
-    min-height: 100vh;
-    /* background-color: white; */
+    height: 750px;
+    background-color: white;
     padding-bottom: 50px;
 }
 
