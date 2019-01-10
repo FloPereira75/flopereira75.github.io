@@ -2,7 +2,6 @@
 html, body {
     margin: 0;
     padding: 0;
-    /* height: 100%; */
     background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
     font-family: 'Titillium Web', sans-serif;
     color: #3f3844;
@@ -133,18 +132,17 @@ nav ul li {
 /* PORTRAIT */
 
 #info {
-    height : 700px;
+    height : 750px;
     width: 100%;
     background-color: white;
     position: relative;
 }
 .wrap-info {
-    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
-    height: 65vh;
-    width: 500px;
+    height: 500px;
+    width: 400px;
     border-radius: 3px;
     position: relative;
-    left: 75px;
+    left: 150px;
     display: inline-block;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
@@ -163,8 +161,8 @@ nav ul li {
     padding-top: 25px;
 }
 .div-aside-info-p {
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 .aside-gauche a {
     text-decoration: none;
@@ -180,27 +178,22 @@ nav ul li {
     font-weight: bold; /* Met en gras la partie gauche du formulaire */
 }
 .wrap-bio {
-    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
-    height: 65vh;
-    width: 500px;
+    height: 500px;
+    width: 400px;
     border-radius: 3px;
     position: absolute;
-    right: 75px;
+    right: 150px;
     display: inline-block;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
-    /* transition: box-shadow .3s; */
-}
-/* .wrap-bio:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-} */
+}
 
 .image-bio {
     text-align: center;
     padding-top: 25px
 }
 .div-aside-bio-p {
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 /* PARCOURS ET COMPETENCES */
@@ -249,20 +242,15 @@ nav ul li {
 }
 
 .xperience {
-    height: 550px;
+    height: 500px;
     width: 400px;
     background-color: white;
     display: inline-block;
     position: relative;
     left: 150px;
     border-radius: 3px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
-    /* transition: box-shadow .3s; */
-}
-
-/* .xperience:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-} */
+}
 
 .wrap-xperience {
     padding-left: 35px;
@@ -270,20 +258,15 @@ nav ul li {
 }
 
 .cptence {
-    height: 550px;
+    height: 500px;
     width: 400px;
     background-color: white;
     display: inline-block;
     position: absolute;
     right: 150px;
     border-radius: 3px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
-    /* transition: box-shadow .3s; */
-}
-
-/* .cptence:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-} */
+}
 
 .cptence img {
     display: block;
@@ -309,25 +292,26 @@ nav ul li {
 /* PROJETS */
 
 .projets {
-    height: 750px;
+    height: 820px;
     background-color: white;
     padding-bottom: 50px;
 }
 
 .projets h2 {
     text-align: center;
-    padding-top: 5vh;
+    padding-top: 75px;
     /* padding-bottom: 25px; */
     margin-bottom: 15px;
     font-size: 4.5em;
     position: relative;
 }
 .projets h3 {
-    font-size: 1.75em;
+    font-size: 2em;
 }
 .projets img {
     height: 300px;
     width: 750px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.25)
 }
 .projets a {
     text-decoration: none;
@@ -335,6 +319,11 @@ nav ul li {
 }
 .wrap-taupe {
     text-align: center;
+}
+.div-jeutaupe {
+    padding-left: 269px;
+    padding-right: 269px;
+    text-align: left;
 }
 /* FOOTER */
 

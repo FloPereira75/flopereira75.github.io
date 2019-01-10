@@ -48,7 +48,7 @@
     /* WELCOME */
 
     #wlcome {
-        height: auto;
+        height: 715px;
     }
     #wlcome h2 {
         font-size: 4em;
@@ -89,6 +89,7 @@
         border-radius: 0;
         background-image: none;
         box-shadow: none;
+        padding-bottom: 50px;
     }
     .wrap-bio {
         height: 500px;
@@ -99,19 +100,10 @@
         background-image: none;
         box-shadow: none;
     }
-    .aside-gauche {
-        padding-left: 35px;
-        padding-right: 35px;
-    }
     #info .aside-droit {
         text-align: inherit;
     }
     #info .aside-gauche {
-        text-align: inherit;
-    }
-    .aside-droit {
-        padding-left: 15px;
-        padding-right: 15px;
         text-align: inherit;
     } 
 
@@ -122,6 +114,7 @@
     }
     .exp h2 {
         font-size: 3em;
+        padding-top: 90px;
     }
     .exp h3 {
         font-size: 1.6em;
@@ -168,19 +161,21 @@
         min-height: 0;
     }
 
-    .projets h2 {
+    /* .projets h2 {
         padding-top: 0;
         padding-bottom: 0;
         margin-bottom: 0;
         margin-top: 0;
-    }
+    } */
     .wrap-taupe {
         height: 600px;
         padding-left: 35px;
         padding-right: 35px;
     }
     .div-jeutaupe {
-        text-align: initial;    
+        text-align: initial;
+        padding-left: 25px;
+        padding-right: 25px;    
     }
 
     .projets img {
