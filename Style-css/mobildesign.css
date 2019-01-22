@@ -64,6 +64,9 @@
     .wrap-txt-accueil:hover {
         box-shadow: none;
     }
+    .wrap-txt-accueil p {
+        font-size: 0.9em;
+    }
 
     /* PORTRAIT */
 
