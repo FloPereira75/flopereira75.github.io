@@ -1,0 +1,141 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    color: #333;
+    font-family: 'Hind', sans-serif;
+}
+
+.header-portfolio {
+    height: 15%;
+    border-bottom: 2px solid #e1b200;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+.logo-portfolio {
+    border: 2px solid #e1b200;
+    border-radius: 50%;
+    background: #e1b200;
+    padding: 0.5%;
+    font-size: 3em;
+    color: #222930;
+    display: inline-block;
+    margin-top: 1%;
+}
+
+.header-portfolio h3 {
+    display: inline-block;
+    padding-left: 0.75%;
+    font-size: 2.25em;
+}
+
+.header-portfolio a {
+    text-decoration: none;
+    color: #333;
+}
+
+.header-portfolio a:hover {
+    color: #e1b200;
+}
+
+main {
+    height: 100%;
+    display: flex;
+}
+
+.menu-portfolio {
+    width: 20%;
+    height: 87%;
+    border-right: 2px solid #e1b200;
+}
+
+.menu-portfolio ul {
+    list-style: none;
+    margin-top: 20%;
+    font-size: 1.3em;
+}
+
+.menu-portfolio ul li {
+    margin-bottom: 20%;
+}
+
+.menu-portfolio a {
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #e1b200;
+}
+
+.menu-portfolio a:hover {
+    color: #e1b200;
+}
+
+.copyright-portfolio {
+    background: black;
+    color: white;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    line-height: 25px;
+    font-size: 0.7em;
+}
+
+.contenu-portfolio {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    text-align: justify;
+}
+
+.wrap-contenu {
+    height: 85%;
+    width: 80%;
+    overflow: auto;
+}
+
+.wrap-contenu h3 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 1%;
+    margin-bottom: 10%;
+    text-transform: uppercase;
+}
+
+.wrap-contenu p {
+    font-size: 1em;
+    display: inline;
+}
+
+.wrap-contact {
+    display: flex;
+    justify-content: space-around;
+}
+
+.carte-contact {
+    text-align: center;
+    padding: 5%;
+}
+
+.carte-contact:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.carte-contact a {
+    text-decoration: none;
+    color: #222930;
+}
+
+.carte-contact a:hover {
+    transition: color .67s;
+    color: #e1b200;
+}
+
+.logo-contact {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+}
