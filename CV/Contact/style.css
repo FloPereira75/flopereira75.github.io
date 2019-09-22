@@ -37,6 +37,7 @@ body, html {
 }
 
 .header-portfolio a:hover {
+    transition: color .67s;
     color: #e1b200;
 }
 
@@ -68,6 +69,7 @@ main {
 }
 
 .menu-portfolio a:hover {
+    transition: color .67s;
     color: #e1b200;
 }
 
@@ -120,7 +122,7 @@ main {
 }
 
 .carte-contact:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15) ;
 }
 
 .carte-contact a {

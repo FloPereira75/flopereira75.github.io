@@ -3,8 +3,7 @@ body, html {
     margin: 0;
     overflow: hidden;
     height: 100%;
-    /* background: #222930; */
-    color: /* #E9E9E9 */ #333;
+    color: #333;
     font-family: 'Hind', sans-serif;
 }
 
@@ -38,6 +37,7 @@ body, html {
 }
 
 .header-portfolio a:hover {
+    transition: color .67s;
     color: #e1b200;
 }
 
@@ -69,8 +69,10 @@ main {
 }
 
 .menu-portfolio a:hover {
+    transition: color .67s;
     color: #e1b200;
 }
+
 
 .copyright-portfolio {
     background: black;
@@ -106,7 +108,13 @@ main {
     color: black;
     font-weight: bold;
     font-size: 1em !important;
+    text-decoration: none;
     padding: 1.25%;
+}
+
+.annonce-emploi:hover {
+    transition: 0.5s;
+    padding: 2%;
 }
 
 .wrap-contenu h3 {

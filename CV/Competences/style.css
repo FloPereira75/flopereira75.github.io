@@ -37,6 +37,7 @@ body, html {
 }
 
 .header-portfolio a:hover {
+    transition: color .67s;
     color: #e1b200;
 }
 
@@ -68,6 +69,7 @@ main {
 }
 
 .menu-portfolio a:hover {
+    transition: color .67s;
     color: #e1b200;
 }
 
@@ -93,6 +95,9 @@ main {
     height: 85%;
     width: 80%;
     overflow: auto;
+    position: absolute;
+    right: 0px;
+    scroll-behavior: smooth;
 }
 
 .wrap-contenu h3 {
@@ -114,7 +119,7 @@ main {
 }
 
 .div-txt {
-    margin-bottom: 5%;
+    margin-bottom: 7.5%;
 }
 
 .logoformation {
@@ -138,9 +143,27 @@ main {
 }
 
 .icon-skill {
-    height: 50px;
-    width: 50px;
+    height: 75px;
+    width: 75px;
     margin-right: 1.5em;
+}
+
+.icon-skill:hover {
+    height: 85px;
+    width: 85px;
+    transition: .7s;
+}
+
+.icon-skill-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.arrow-up {
+    height: 60px;
+    width: 55px;
+    position: absolute;
+    right: 0px;
 }
 
 
