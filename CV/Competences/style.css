@@ -121,6 +121,8 @@ main {
 .wrap-formation {
     display: block;
     margin-bottom: 10%;
+    background: #f2f2f2;
+    padding: 1.5%;
 }
 
 .div-txt {
@@ -302,10 +304,11 @@ main {
 
     .wrap-formation {
         margin-bottom: 15%;
+        padding: 0.25%;
     }
 
     .icon-skill-list {
-        padding-left: 10px;
+        padding-left: 2px;
         margin-top: 25px;
     }
 
