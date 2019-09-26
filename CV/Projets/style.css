@@ -41,7 +41,6 @@ body, html {
     color: #e1b200;
 }
 
-
 /* SUPPR MENU MOBILE QUAND DESKTOP */
 #menuToggle {
     display: none;
@@ -79,7 +78,6 @@ main {
     color: #e1b200;
 }
 
-
 .copyright-portfolio {
     background: black;
     color: white;
@@ -104,33 +102,59 @@ main {
     overflow: auto;
 }
 
-.wrap-contenu p {
-    font-size: 1.25em;
-}
-
-.annonce-emploi {
-    background: #e1b200;
-    display: inline-block;
-    color: black;
-    font-weight: bold;
-    font-size: 1em !important;
-    text-decoration: none;
-    padding: 1.25%;
-}
-
-.annonce-emploi:hover {
-    transition: 0.5s;
-    padding: 2%;
-    background: black;
-    color: #e1b200;
-}
-
 .wrap-contenu h3 {
     text-align: center;
     font-size: 2em;
     font-weight: 600;
     margin-top: 1%;
     margin-bottom: 5%;
+}
+
+.wrap-contenu p {
+    font-size: 1em;
+    display: inline;
+}
+
+.wrap-formation {
+    display: flex;
+    margin-bottom: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    background: #f2f2f2;
+    padding-top: 2.5%;
+    padding-left: 1.5%;
+    padding-bottom: 2.5%;
+}
+
+.wrap-formation a {
+    color: red;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+.wrap-formation a:hover {
+    color: #e1b200;
+}
+
+
+.screen-game {
+    width: 150px;
+    height: 150px;
+    margin-right: 5%;
+}
+
+.skill-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: .85em;
+    margin-top: 1.5%;
+}
+
+.skill-tag {
+    padding: .25em .75em;
+    border-radius: 1em;
+    margin-right: .5em;
+    margin-bottom: .5em;
+    background: beige;
 }
 
 .footer-portfolio {
@@ -257,12 +281,31 @@ main {
         transform: none;
     }
 
-    .contenu-portfolio h3 {
-        margin-top: 15%;
+    .contenu-portfolio {
+        text-align: initial;
     }
 
-    .annonce-emploi {
-        padding: 2.5%;
+    .contenu-portfolio h3 {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+    .wrap-formation {
+        margin-bottom: 15%;
+        background: #f2f2f2;
+        padding-top: 2.5%;
+        padding-left: 1.5%;
+        padding-bottom: 2.5%;
+    }
+
+    .screen-game {
+        margin-right: 10%;
+        height: 100px;
+        width: 100px;
+    }
+
+    .skill-tag-list {
+        margin-top: 5%;
     }
 
     .footer-portfolio {
@@ -278,3 +321,4 @@ main {
         font-size: 0.9em;
     }
 }
+
