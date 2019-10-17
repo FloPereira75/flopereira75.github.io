@@ -1,0 +1,324 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    color: #333;
+    font-family: 'Hind', sans-serif;
+}
+
+.header-portfolio {
+    height: 15%;
+    border-bottom: 2px solid #e1b200;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+.logo-portfolio {
+    border: 2px solid #e1b200;
+    border-radius: 50%;
+    background: #e1b200;
+    padding: 0.5%;
+    font-size: 3em;
+    color: #222930;
+    display: inline-block;
+    margin-top: 1%;
+}
+
+.header-portfolio h3 {
+    display: inline-block;
+    padding-left: 0.75%;
+    font-size: 2.25em;
+}
+
+.header-portfolio a {
+    text-decoration: none;
+    color: #333;
+}
+
+.header-portfolio a:hover {
+    transition: color .67s;
+    color: #e1b200;
+}
+
+/* SUPPR MENU MOBILE QUAND DESKTOP */
+#menuToggle {
+    display: none;
+}
+
+main {
+    height: 100%;
+    display: flex;
+}
+
+.menu-portfolio {
+    width: 20%;
+    height: 87%;
+    border-right: 2px solid #e1b200;
+}
+
+.menu-portfolio ul {
+    list-style: none;
+    margin-top: 20%;
+    font-size: 1.3em;
+}
+
+.menu-portfolio ul li {
+    margin-bottom: 20%;
+}
+
+.menu-portfolio a {
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #e1b200;
+}
+
+.menu-portfolio a:hover {
+    transition: color .67s;
+    color: #e1b200;
+}
+
+.copyright-portfolio {
+    background: black;
+    color: white;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    line-height: 25px;
+    font-size: 0.7em;
+}
+
+.contenu-portfolio {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    text-align: justify;
+}
+
+.wrap-contenu {
+    height: 85%;
+    width: 80%;
+    overflow: auto;
+}
+
+.wrap-contenu h3 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.wrap-contenu p {
+    font-size: 1em;
+    display: inline;
+}
+
+.wrap-formation {
+    display: flex;
+    margin-bottom: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    background: #f2f2f2;
+    padding-top: 2.5%;
+    padding-left: 1.5%;
+    padding-bottom: 2.5%;
+}
+
+.wrap-formation a {
+    color: red;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+.wrap-formation a:hover {
+    color: #e1b200;
+}
+
+
+.screen-game {
+    width: 150px;
+    height: 150px;
+    margin-right: 5%;
+}
+
+.skill-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: .85em;
+    margin-top: 1.5%;
+}
+
+.skill-tag {
+    padding: .25em .75em;
+    border-radius: 1em;
+    margin-right: .5em;
+    margin-bottom: .5em;
+    background: beige;
+}
+
+.footer-portfolio {
+    display: none;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 768px) {
+
+    .header-portfolio {
+        height: 70px;
+        padding-left: 3%;
+    }
+
+    .logo-portfolio {
+        font-size: 2em;
+    }
+
+    .header-portfolio h3 {
+        font-size: 1.5em;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .wrap-contenu {
+        width: 100%;
+    }
+
+    #menuToggle {
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0; /* hide this */
+        z-index: 2; /* and place it over the hamburger */
+        -webkit-touch-callout: none;
+    }
+    
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #e1b200;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    #menuToggle input:checked ~ span{
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(3){
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(2){
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    #menu {
+        position: absolute;
+        width: 300px;
+        margin: -125px 0 0 -40px;
+        padding: 50px;
+        padding-top: 125px;
+        background: #e1b200;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    #menu li{
+        padding: 10px 0;
+        font-size: 1.65em;
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: #232323;
+        transition: color 0.3s ease;
+    }
+
+    #menu a:hover{
+        color: white;
+    }
+
+    #menuToggle input:checked ~ ul{
+        transform: none;
+    }
+
+    .contenu-portfolio {
+        text-align: initial;
+    }
+
+    .contenu-portfolio h3 {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+    .wrap-formation {
+        margin-bottom: 15%;
+        background: #f2f2f2;
+        padding-top: 2.5%;
+        padding-left: 1.5%;
+        padding-bottom: 2.5%;
+    }
+
+    .screen-game {
+        margin-right: 10%;
+        height: 100px;
+        width: 100px;
+    }
+
+    .skill-tag-list {
+        margin-top: 5%;
+    }
+
+    .footer-portfolio {
+        display: block;
+        height: 4%;
+        width: 100%;
+        background: black;
+        position: absolute;
+        bottom: 0px;
+        color: white;
+        text-align: center;
+        line-height: 5px;
+        font-size: 0.9em;
+    }
+}
+
