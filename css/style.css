@@ -71,6 +71,7 @@ section .heading h2 {
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #d82c2e !important;
     background-color: #fff !important;
+    transition: all 0.25s ease-in 0s;
 }
 
 .navbar-default .navbar-toggle {
@@ -364,8 +365,13 @@ section .heading h2 {
 }
 
 #contact .thumbnail img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(85%);
+}
+
+#contact .thumbnail img:hover {
+    filter: none;
 }
 
 /* REALISATIONS */
