@@ -1,0 +1,135 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background: url('../Contents/background/bg-foot1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Anton', sans-serif;
+}
+
+
+/* PARTIE HEADER */
+
+header {
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 80px;
+    border-bottom: solid 5px white;
+}
+
+header h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    line-height: 75px;
+    color: white;
+    margin: auto 25px;
+}
+
+.title-star-group {
+    display: flex;
+    justify-content: center;
+}
+
+.star-white-title {
+    height: 35px;
+    margin-right: 3px;
+    position: relative;
+    top: 17.5px;
+}
+
+.image-nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 63px;
+    right: 50px;
+}
+
+.image-nav-menu img {
+    height: 50px;
+    cursor: pointer;
+}
+
+/* MAIN PAGE */
+
+.main-page {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-page a {
+    text-decoration: none;
+}
+
+.home-90 {
+    background-image: url('../Contents/90/Zidane/Zidane.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 330px;
+    margin-top: 90px;
+    margin-left: 90px;
+    border-radius: 5px;
+    box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.75);
+    filter: grayscale(75%);
+    cursor: pointer;
+}
+
+.home-90:hover {
+    filter: none;
+    transition: all 0.25s ease-in 0s;
+}
+
+.home-00 {
+    background-image: url('../Contents/00/Ronaldinho/roni.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 330px;
+    margin-top: 90px;
+    border-radius: 5px;
+    box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.75);
+    filter: grayscale(75%);
+    cursor: pointer;
+}
+
+.home-00:hover {
+    filter: none;
+    transition: all 0.25s ease-in 0s;
+}
+
+.home-10 {
+    background-image: url('../Contents/10/Messi/Lionel-Messi.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 330px;
+    margin-top: 90px;
+    margin-right: 90px;
+    border-radius: 5px;
+    box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.75);
+    filter: grayscale(75%);
+    cursor: pointer;
+}
+
+.home-10:hover {
+    filter: none;
+    transition: all 0.25s ease-in 0s;
+}
+
+.year-on-image {
+    text-align: center;
+    color: #dddddd;
+    font-size: 80px;text-shadow: 7px 7px 4px rgba(0, 0, 0, 0.75);
+    vertical-align: middle;
+    line-height: 600px;
+}
+
+.text-home {
+    font-size: 55px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 4px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    margin: 50px auto 75px;
+
+}
