@@ -8,9 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script src="main.js"></script>
+    
     
 </head>
 <body>
@@ -43,7 +41,7 @@
                 </nav>
         </header>
 
-        <div class="article-principal wrapper wrapper-desktop">
+        <section class="article-principal wrapper wrapper-desktop">
             <div class="flex-around">
                 <div class="div-article-principal_content">
                     <p class="text-bold no-margin-top">Star Wars, the Force Awakens</p>
@@ -71,52 +69,67 @@
                     <div></div>
                 </div>
             </div>
-        </div>
+        </section>
 
 
         <div class="bckg-img-btw-article"></div>
 
 
-        <div class="article-secondary wrapper">
-            <h2 class="article-secondary_title text-bold">A long time ago,<br> in a galaxy far, far away...</h2>
+        <section class="article-secondary wrapper wrapper-desktop">
+            <h2 class="article-secondary_title text-bold">A long time ago,<br class="br"> in a galaxy far, far away...</h2>
             <div class="article-secondary_image"></div>
             <p class="article-secondary_content">
-                <span class="text-italic-bold">La Guerre des étoiles</span> (titre original <span class="text-italic-bold">Star Wars</span>, soit littéralement <span class="text-italic">Guerres Stellaires</span> ) est une épopée cinématographique de science-fiction créée par George Lucas, considérée comme un élément phare du space opera. Prévue à la base pour être une suite de trois trilogies (triptyque), Lucas fut contraint, par manque de moyens techniques, de commencer par la seconde trilogie (<span class="text-italic">l'Épisode IV - Un nouvel espoir</span>) en 1977. La série connut un succès phénoménal partout dans le monde et engendra une très importante communauté de fans.
+                <span class="text-italic text-bold">La Guerre des étoiles</span> (titre original <span  class="text-italic text-bold">Star Wars</span>, soit littéralement <span class="text-italic">Guerres Stellaires</span> ) est une épopée cinématographique de science-fiction créée par George Lucas, considérée comme un élément phare du space opera. Prévue à la base pour être une suite de trois trilogies (triptyque), Lucas fut contraint, par manque de moyens techniques, de commencer par la seconde trilogie (<span  class="text-italic text-bold">l'Épisode IV - Un nouvel espoir</span>) en 1977. La série connut un succès phénoménal partout dans le monde et engendra une très importante communauté de fans.
                 Sans prétendre expliquer le succès du premier film (s'il y avait une recette, cela se saurait), on peut, toutefois, noter que, malgré le manque de moyens (le budget était relativement modeste, les acteurs presque inconnus) :
+                <br>
+                <span>
+                    - Il fait appel à des références connues et appréciées des jeunes de l'époque : films de cape et d'épée, westerns, péplums, contes de fées et même <span  class="text-italic text-bold">le Seigneur des Anneaux</span> de J.R.R. Tolkien ; cette œuvre n'apparaît pas comme de la science-fiction au sens strict mais plutôt comme du space fantasy.
+                    <br>
+                    - Les effets spéciaux, supervisés par Ken Ralston, étaient réellement novateurs, avec notamment la participation de John Dykstra (qui a également participé au premier film de <span  class="text-italic text-bold">Star Trek</span>), qui avait développé une nouvelle manière d'animer les maquettes des vaisseaux en coordonnant leurs mouvements par ordinateur (Dykstraflex).
+                    <br>
+                    - Le film a développé un univers cohérent, avec, comme préoccupation constante, autant la création d'une ambiance que l'action proprement dite.
+                    - La musique, composée par John Williams, introduit des thèmes récurrents et des leitmotivs (procédé classique mais renforçant la cohérence).
+                </span>
             </p>
-        </div>
+        </section>
 
         <div class="image-after-article"></div>
 
 
         <div class="footer">
-            <div class="footer-license flex-around">
-                <div class="footer-license_content color-link">
-                    <p>Terms of Use</p>
-                    <p>Legal Notices</p>
-                    <p>Privacy Policy</p>
+            <p class="lucasfilm-right"><span class="text-bold">TM Lucasfilm</span> Ltd. All Right Reserved.</p>
+            
+            <div class="footer-right">
+
+                <div class="footer-right_link">
+                    <p><a href="#">Terms of Use</a></p>
+                    <p><a href="#">Legal Notices</a></p>
+                    <p><a href="#">Privacy Policy</a></p>
                 </div>
-                <div class="footer-license_content">
-                    <p>Your California Privacy Rights</p>
-                    <p>Star Wars at Disney Store</p>
-                    <p>Privacy Policy</p>
+
+
+                <div class="footer-right_link">
+                    <p><a href="#"  class="color-link">Your California Privacy Rights</a></p>
+                    <p><a href="#">Star Wars at Disney Store</a></p>
+                    <p><a href="#">Privacy Policy</a></p>
+                </div>
+
+                <div class="footer-right_link">
+                    <p class="uppercase">Follow Star Wars</p>
+                    <div class="flex-around">
+                        <a href="#"><img src="Asset/Assets/icon_facebook.png" alt="Facebook link"></a>
+                        <a href="#"><img src="Asset/Assets/icon_twitter.png" alt="Twitter link"></a>
+                        <a href="#"><img src="Asset/Assets/icon_instagram.png" alt="Instagram link"></a>
+                    </div>
                 </div>
             </div>
-            <div class="footer-follow-group">
-                <div class="uppercase">
-                    <p>Follow Star Wars</p>
-                </div>
-                <div class="footer-follow-group_icons_grp flex-around">
-                    <a href="#"><img src="Asset/Assets/icon_facebook.png" alt="Facebook link" class="footer-follow-group-icons_img"></a>
-                    <a href="#"><img src="Asset/Assets/icon_twitter.png" alt="Twitter link" class="footer-follow-group-icons_img"></a>
-                    <a href="#"><img src="Asset/Assets/icon_instagram.png" alt="Instagram link" class="footer-follow-group-icons_img"></a>
-                </div>
-            </div>
-        </div>
 
 
 
 
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

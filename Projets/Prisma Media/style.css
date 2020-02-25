@@ -14,11 +14,6 @@ body {
     font-weight: bold;
 }
 
-.text-italic-bold {
-    font-style: italic;
-    font-weight: bold;
-}
-
 .text-italic {
     font-style: italic;
 }
@@ -49,8 +44,8 @@ body {
 
 .header {
     background-image: url(Asset/Assets/header.png);
-    background-position: center;
-    background-size: 100% 100%;
+    background-position-x: center;
+    background-size: cover;
     height: 500px;
 }
 
@@ -116,6 +111,75 @@ body {
     background-position: center;
     height: 500px;
 }
+
+/**** SECOND ARTICLE ****/
+
+
+
+.article-secondary_image {
+    background-image: url(Asset/Assets/r2d2_c3p0.jpg);
+    height: 290px;
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+
+.article-secondary_content {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.br {
+    display: none;
+}
+
+.article-secondary_title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.image-after-article {
+    background-image: url(Asset/Assets/stormtroopers-2x.jpg);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+
+/**** FOOTER ****/
+
+.footer {
+    background-image: url(Asset/Assets/darthvader_2x.jpg);
+    height: 272px;
+    background-size: 100% 100%;
+    background-position: center;
+    color: #9B9B9B;
+    font-size: 12px;
+}
+
+.lucasfilm-right {
+    margin: 0;
+    font-size: 14px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.footer-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.footer-right_link {
+    text-align: center;
+    width: 200px;
+}
+
+.footer-right_link a {
+    color: #9B9B9B;
+}
+
 
 
 
@@ -229,7 +293,10 @@ body {
 
     .article-secondary_image {
         background-image: url(Asset/Assets/r2d2_c3p0.jpg);
+        background-position: center;
+        background-size: 100% 100%;
         height: 290px;
+        width: 100%;
         margin-bottom: 30px;
     }
 
@@ -244,33 +311,14 @@ body {
 
     .footer {
         background-image: url(Asset/Assets/darthvader.jpg);
-        height: 272px;
-        background-size: cover;
-        background-position: center;
-        color: #9B9B9B;
-        font-size: 12px;
     }
 
-    .footer-license {
-        margin-left: 33px;
-        margin-bottom: 50px;
-        padding-top: 40px;
+    .lucasfilm-right {
+        display: none;
     }
 
-    .footer-license_content {
-        text-align: center;
-        text-decoration: underline;
-    }
-
-    .footer-follow-group {
-        display: flex;
-        margin-left: 33px;
-        margin-bottom: 30px;
-    }
-
-    .footer-follow-group_icons_grp {
-        margin-left: 45px;
-        width: 160px;
+    .footer-right {
+        margin-top: 0;
     }
 }
 
