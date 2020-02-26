@@ -81,6 +81,10 @@ body {
     letter-spacing: 3px;
 }
 
+.header_menu ul li:nth-last-child(1) {
+    margin-right: 0;
+}
+
 .header_menu_link {
     color: #fff;
     text-decoration: none;
@@ -176,6 +180,11 @@ body {
     width: 200px;
 }
 
+.footer-right_network {
+    text-align: center;
+    width: 200px;
+}
+
 .footer-right_link a {
     color: #9B9B9B;
 }
@@ -184,7 +193,7 @@ body {
 
 
 
-/***************************** MOBILE ****************************/
+/***************************** MOBILE  ****************************/
 
 @media (max-width: 768px) {
 
@@ -269,7 +278,7 @@ body {
 
     .bckg-img-btw-article {
         background-image: url("Asset/Assets/kiloren.png");
-        background-size: 170% 100%;
+        background-size: 150% 100%;
         background-position: center;
         height: 400px;
     }
@@ -319,6 +328,23 @@ body {
 
     .footer-right {
         margin-top: 0;
+        flex-wrap: wrap;
+        padding-top: 40px;
+    }
+
+    .footer-right_link {
+        width: 50%;
+    }
+
+    .footer-right_network {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 60px;
+    }
+
+    .footer-right_network a:nth-child(-n+2) {
+        margin-right: 20px;
     }
 }
 

@@ -1,10 +1,11 @@
+/* Effet de parallaxe */ 
 function parallax() {
-    const parallax = document.querySelector('.header');
-    const parallaxKiloRen = document.querySelector('.bckg-img-btw-article');
-    const parallaxStormTrooper = document.querySelector('.image-after-article');
+    const parallaxHeader = document.querySelector('.parallax-header');
+    const parallaxKiloRen = document.querySelector('.parallax-kiloren');
+    const parallaxStormTrooper = document.querySelector('.parallax-stromtrooper');
 
     window.addEventListener('scroll', () => {
-        parallax.style.backgroundPositionY = window.scrollY / 3 + "px";
+        parallaxHeader.style.backgroundPositionY = window.scrollY / 3 + "px";
     });
 
     window.addEventListener('scroll', () => {
@@ -12,14 +13,11 @@ function parallax() {
     });
 
     window.addEventListener('scroll', () => {
-        parallaxStormTrooper.style.backgroundPositionX = window.scrollY / 15 + "px";
+        parallaxStormTrooper.style.backgroundPositionX = window.scrollY / 10 + "px";
     });
 };
 
 parallax();
-
-
-
 
 
 
