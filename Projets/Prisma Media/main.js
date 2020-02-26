@@ -1,5 +1,5 @@
 /* Effet de parallaxe */ 
-function parallax() {
+/* function parallax() {
     const parallaxHeader = document.querySelector('.parallax-header');
     const parallaxKiloRen = document.querySelector('.parallax-kiloren');
     const parallaxStormTrooper = document.querySelector('.parallax-stromtrooper');
@@ -17,17 +17,33 @@ function parallax() {
     });
 };
 
-parallax();
+parallax(); */
 
 
 
 $(document).ready(function() {
-    /* Ouvrir le menu */
+
+
+    /*** Effet parallaxe ***/
+    $('.starwars-parallax').parallax({
+        imageSrc: 'Asset/Assets/header.png',
+        speed: 0.3
+    });
+    
+    $('.kiloren-parallax').parallax({
+        imageSrc: 'Asset/Assets/kiloren.jpg'
+    });
+    
+    $('.stormtrooper-parallax').parallax({
+        imageSrc: 'Asset/Assets/stormtroopers.jpg'
+    });
+
+    /*** Ouvrir le menu ***/
     $('.menu-btn').click(function() {
         $('.header_menu').css('display', 'block');
     });
 
-    /* Fermer le menu */
+    /*** Fermer le menu ***/
     $('.close-btn').click(function() {
         $('.header_menu').css('display', 'none');
     });

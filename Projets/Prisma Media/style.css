@@ -42,10 +42,8 @@ body {
 
 /**** HEADER ****/
 
-.header {
-    background-image: url(Asset/Assets/header.png);
-    background-position-x: center;
-    background-size: cover;
+.starwars-parallax {
+    width: 100%;
     height: 500px;
 }
 
@@ -56,6 +54,7 @@ body {
 
 .menu-btn {
     display: none;
+    z-index: 100;
 }
 
 /**** MENU ****/
@@ -66,6 +65,7 @@ body {
     height: 55px;
     background: rgb(0, 0, 0, 0.5);
     position: fixed;
+    z-index: 100;
 }
 
 .header_menu ul {
@@ -104,21 +104,17 @@ body {
 .article-principal_image {
     height: 600px;
     width: 300px;
-    background-image: url(Asset/Assets/ad.jpg);
+    background-image: url(Asset/Assets/battlefront.jpg);
 }
 
-/**** IMAGE DE COVER ENTRE ARTICLE ****/
+/**** KILOREN ****/
 
-.bckg-img-btw-article {
-    background-image: url("Asset/Assets/kiloren.png");
-    background-size: 100%;
-    background-position: center;
+.kiloren-parallax {
+    width: 100%;
     height: 500px;
 }
 
 /**** SECOND ARTICLE ****/
-
-
 
 .article-secondary_image {
     background-image: url(Asset/Assets/r2d2_c3p0.jpg);
@@ -143,11 +139,11 @@ body {
     margin-bottom: 30px;
 }
 
-.image-after-article {
-    background-image: url(Asset/Assets/stormtroopers-2x.jpg);
+/**** STORMTROOPER ****/
+
+.stormtrooper-parallax {
     height: 250px;
-    background-position: center;
-    background-size: cover;
+    width: 100%;
 }
 
 /**** FOOTER ****/
@@ -159,6 +155,7 @@ body {
     background-position: center;
     color: #9B9B9B;
     font-size: 12px;
+    margin-top: -10px;
 }
 
 .lucasfilm-right {
@@ -190,9 +187,6 @@ body {
 }
 
 
-
-
-
 /***************************** MOBILE  ****************************/
 
 @media (max-width: 768px) {
@@ -203,11 +197,8 @@ body {
 
     /**** HEADER ****/
 
-    .header {
-        background-image: url("Asset/Assets/header.png");
-        background-position: center;
-        background-size: 145% 100%;
-        height: 400px;
+    .starwars-parallax {
+        background-size: 140% 100% !important;
     }
 
 
@@ -236,7 +227,7 @@ body {
         padding-top: 50px;
         font-size: 20px;
         text-align: center;
-        position: relative;
+        position: absolute;
         display: none;
     }
 
@@ -276,11 +267,8 @@ body {
 
     /**** IMAGE DE COVER ENTRE ARTICLE ****/
 
-    .bckg-img-btw-article {
-        background-image: url("Asset/Assets/kiloren.png");
-        background-size: 150% 100%;
-        background-position: center;
-        height: 400px;
+    .kiloren-parallax {
+        background-size: 120% 100% !important;
     }
 
     /**** SECOND ARTICLE ****/
@@ -301,19 +289,22 @@ body {
     }
 
     .article-secondary_image {
-        background-image: url(Asset/Assets/r2d2_c3p0.jpg);
         background-position: center;
         background-size: 100% 100%;
         height: 290px;
         width: 100%;
         margin-bottom: 30px;
+        margin-right: 0;
     }
 
-    .image-after-article {
-        background-image: url(Asset/Assets/stormtroopers.jpg);
-        height: 250px;
-        background-position: center;
-        background-size: cover;
+    .br {
+        display: block;
+    }
+
+    /**** STORMTROOPER ****/
+
+    .stormtrooper-parallax {
+        background-size: 120% 100% !important;
     }
 
     /**** FOOTER ****/
