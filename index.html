@@ -1,398 +1,182 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Portfolio Florian Pereira</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Florian Pereira</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/script.js"></script>
-
-
-    </head>
-    <body data-spy="scroll" data-target=".navbar" data-offset="60">
-
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#about">Moi</a></li>
-                        <li><a href="#skills">Compétences</a></li>
-                        <li><a href="#experience">Expériences</a></li>
-                        <li><a href="#formation">Formations</a></li>
-                        <li><a href="#realisations">Réalisations</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
             </div>
-        </nav>
-
-        <section id="about" class="container-fluid">
-            <div class="col-xs-8 col-md-4 profile-picture">
-                <img src="images/moi1.jpg" alt="me" class="img-circle">
-            </div>
-            <div class="heading">
-                <h1>Hello, moi c'est Florian</h1>
-                <h3>Développeur Front-End Junior</h3>
-                <a href="#contact" class="button1">Recherche poste développeur front-end</a>
-            </div>
-        </section>
-
-        <section id="skills">
-            <div class="gold-divider"></div>
-            <div class="heading">
-                <h2>Compétences</h2>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="badge-skills">
-                            <h4>Langages</h4>
-                            <div class="gold-divider"></div>
-                            <div class="skills-progress">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%; background: rgb(225, 178, 0, 0.75);">
-                                        HTML 90%
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%; background: rgb(225, 178, 0, 0.75);">
-                                        CSS 90%
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%; background: rgb(225, 178, 0, 0.75);">
-                                        Javascript 80%
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%; background: rgb(225, 178, 0, 0.75);">
-                                        PHP 75%
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="badge-skills">
-                            <h4>Framework & Libraries</h4>
-                            <div class="gold-divider"></div>
-                            <div class="skills-progress">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 75%; background: rgb(225, 178, 0, 0.75);">
-                                        JQuery 90%
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 75%; background: rgb(225, 178, 0, 0.75);">
-                                        Bootstrap 90%
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%; background: rgb(225, 178, 0, 0.75);">
-                                        React.Js 60%
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%; background: rgb(225, 178, 0, 0.75);">
-                                        Vue.Js 50%
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="badge-skills">
-                            <h4>Outils</h4>
-                            <div class="gold-divider"></div>
-                            <div class="skills-progress">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%; background: rgb(225, 178, 0, 0.75);">
-                                        Visual Studio Code 90%
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%; background: rgb(225, 178, 0, 0.75);">
-                                        Github Desktop 80%
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%; background: rgb(225, 178, 0, 0.75);">
-                                        Git 60%
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%; background: rgb(225, 178, 0, 0.75);">
-                                        Figma 60%
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="experience">
-            <div class="container">
-                <div class="white-divider"></div>
-                <div class="heading">
-                    <h2>Expériences Professionnelles</h2>
-                </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
-                        <div class="timeline-panel-container">
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <img class="logo-job" src="images/jobs/logo_interstis.jpg" alt="InterStis">
-                                    <h3>InterStis</h3>
-                                    <h6>Service de plateforme collaborative en ligne - La Plaine Saint Denis</h6>
-                                    <h4>Développeur Web Stagiaire</h4>
-                                    <p class="text-muted"><small class="glyphicon glyphicon-time"></small>2019 - 2020 (6 mois)</p>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Contribuer activement à l’optimisation du site</p>
-                                    <p>Intégrations de contenus sur la plateforme web InterStis.</p>
-                                    <p>Refonte d'éléments de la plateforme web InterStis</p>
-                                    <div class="skill-tag-list">
-                                        <span class="skill-tag">HTML</span>
-                                        <span class="skill-tag">CSS</span>
-                                        <span class="skill-tag">JavaScript</span>
-                                        <span class="skill-tag">PHP</span>
-                                        <span class="skill-tag">SQL</span>
-                                        <span class="skill-tag">MySQL</span>
-                                        <span class="skill-tag">Git/Github</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
-                        <div class="timeline-panel-container-inverted">
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <img class="logo-job" src="images/jobs/logo_rivp.jpg" alt="InterStis">
-                                    <h3>RIVP</h3>
-                                    <h6>Bailleur social ville de Paris - Paris 20ème</h6>
-                                    <h4>Gestionnaire administratif</h4>
-                                    <p class="text-muted"><small class="glyphicon glyphicon-time"></small>2016 - 2018</p>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Gestion des dossiers locataires : réception futurs locataires, visite appartements, montage de dossiers, signature de bail, médiation litiges …</p>
-                                    <p>Utilisation pack office et outils collaboratifs dédiés </p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <!-- <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
-                        <div class="timeline-panel-container">
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <img class="logo-job" src="images/jobs/icon_magasin.png" alt="InterStis">
-                                    <h3 style="font-size: 18px; margin-top: 15px;">Mr Bricolage ; GAP ; Monoprix  ; Carrefour ...</h3>
-                                    <h4>Conseiller en vente</h4>
-                                    <p class="text-muted"><small class="glyphicon glyphicon-time"></small> 2010 - 2017</p>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Accueil et conseil à la clientèle</p>
-                                    <p>Gestion des stocks</p>
-                                    <p>Tenue de caisse</p>
-                                </div>
-                            </div>
-                            
-                        </div> -->
-                    </li>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#parcours">Parcours</a></li>
+                    <li><a href="#apropos">A Propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-        </section>
+        </div>
+    </nav>
+    
+    <div class="home" id="home">
+        <h1>Florian Pereira</h1>
+        <h2>Développeur Front-End</h2>
+    </div>
 
-        <section id="formation">
-            <div class="gold-divider"></div>
-            <div class="heading">
-                <h2>Formations</h2>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="formation-block">
-                            <h5>2018 - 2019</h5>
-                            <span class="glyphicon glyphicon-education"></span>
-                            <h3>CNAM - Paris</h3>
-                            <h4>Développeur d'applications web FullStack JS</h4>
-                            <div class="gold-divider"></div>
-                            <div class="skill-tag-list">
-                                <span class="skill-tag-formation">HTML</span>
-                                <span class="skill-tag-formation">CSS</span>
-                                <span class="skill-tag-formation">JavaScript</span>
-                                <span class="skill-tag-formation">Vue.Js</span>
-                                <span class="skill-tag-formation">Node.Js</span>
-                                <span class="skill-tag-formation">Express.js</span>
-                                <span class="skill-tag-formation">MongoDB</span>
-                                <span class="skill-tag-formation">Git/Github</span>
-                                <span class="skill-tag-formation">GIMP</span>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="formation-block">
-                            <h5>2008 - 2009</h5>
-                            <span class="glyphicon glyphicon-education"></span>
-                            <h3>Lycée Henri Bergson - Paris</h3>
-                            <h4>Bac STG spécialité Marketing</h4>
-                            <div class="gold-divider"></div>
-                            <p style="visibility: hidden;">HTML/CSS, Javascript, JQuery</p>
-                            <p style="visibility: hidden;">Responsive Design</p>
-                        </div>
-                    </div>
+    <main class="wrap">
+        <section class="portfolio" id="portfolio">
+            <div class="line-title"></div>
+            <h2><span>Mon</span> Portfolio</h2>
+            <div class="card">
+                <div class="card_img _ba"></div>
+                <div class="card_infos">
+                    <p class="card_title">Base Apparel</p>
+                    <p>Challenge proposé par frontendmentor.io</p>
+                    <p>Lien vers le github : LIEN A METTRE</p>
                 </div>
             </div>
+            <div class="card">
+                <div class="card_img _hd"></div>
+                <div class="card_infos">
+                    <p class="card_title">Huddle</p>
+                    <p>Challenge proposé par frontendmentor.io</p>
+                    <p>Lien vers le github : LIEN A METTRE</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_img _pg"></div>
+                <div class="card_infos">
+                    <p class="card_title">Ping</p>
+                    <p>Challenge proposé par frontendmentor.io</p>
+                    <p>Lien vers le github : LIEN A METTRE</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_img _sp"></div>
+                <div class="card_infos">
+                    <p class="card_title">Social Proof</p>
+                    <p>Challenge proposé par frontendmentor.io</p>
+                    <p>Lien vers le github : LIEN A METTRE</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_img _sglp"></div>
+                <div class="card_infos">
+                    <p class="card_title">Single Price</p>
+                    <p>Challenge proposé par frontendmentor.io</p>
+                    <p>Lien vers le github : LIEN A METTRE</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_img _sw"></div>
+                <div class="card_infos">
+                    <p class="card_title">Star Wars</p>
+                    <p>Challenge proposé par frontendmentor.io</p>
+                    <p>Lien vers le github : LIEN A METTRE</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="parcours" id="parcours">
+            <div class="line-title"></div>
+            <h2><span>Mon</span> Parcours</h2>
+            <h3>Formations</h3>
+            <div class="xp_card">
+                <p class="xp_card_title">Développeur d'applications web</p>
+                <p class="xp_card_org">CNAM <span>(Paris)</span></p>
+                <p class="xp_card_date">2018-2019</p>
+                <p class="xp_card_content_title">Formation de 800h :</p>
+                <p class="xp_card_content_text">- Développement de projets (sites web) en groupe.</p>
+                <p class="xp_card_content_text">- Compétences acquises : Autonomie, organisation, HTML/CSS, Javascript, Vue.js, Node/Express.js, Git, Github</p>
+                <p class="xp_card_content_title">Participations au(x) évènement(s) :</p>
+                <p class="xp_card_content_text">- Hackathon Femmes & Entrepreneuriat en partenariat avec TharGo et les Déterminés.</p>
+            </div>
+            <div class="xp_card">
+                <p class="xp_card_title">Baccalauréat STG spécialité Marketing</p>
+                <p class="xp_card_org">Lycée Henri Bergson <span>(Paris)</span></p>
+                <p class="xp_card_date">2008-2009</p>
+            </div>
+            <h3>Expériences</h3>
+            <div class="xp_card">
+                <p class="xp_card_title">Stagiaire développeur front-end</p>
+                <p class="xp_card_org">InterStis <span>(Saint Denis)</span></p>
+                <p class="xp_card_date">2019-2020 (6 mois)</p>
+                <p class="xp_card_content_title">Service de plateforme collaborative en ligne</p>
+                <p class="xp_card_content_text">Equipe de 3 devs (DT, Fullstack et moi)</p>
+                <p class="xp_card_content_text">- Contribuer activement à l'optimisation du site</p>
+                <p class="xp_card_content_text">- Intégration de contenus sur la plateforme web InterStis</p>
+                <p class="xp_card_content_text">- Refonte d'éléments de la plateforme web InterStis</p>
+            </div>
+            <div class="xp_card">
+                <p class="xp_card_title">Gestionnaire administratif</p>
+                <p class="xp_card_org">RIVP <span>(Paris)</span></p>
+                <p class="xp_card_date">2016-2018</p>
+                <p class="xp_card_content_title">Bailleur social de la ville de Paris</p>
+                <p class="xp_card_content_text">Gestion des dossiers locataires : </p>
+                <p class="xp_card_content_text">- Réception futurs locataires, visite appartements, montage de dossiers, signature de bail, médiations litiges...</p>
+                <p class="xp_card_content_text">Utilisation Pack Office et outils collaboratifs dédiés</p>
+            </div>
+            <h3>Compétences</h3>
+            <div class="xp_card">
+                <p class="xp_card_title">Langages, Frameworks & Librarys : </p>
+                <p class="xp_card_content_text">HTML, CSS, JavaScript, Php, jQuery, Bootstrap, React (en cours)</p>
+                <p class="xp_card_title">Outils informatiques & logiciels :</p>
+                <p class="xp_card_content_text">Visual Studio Code, Git, Github, Github Desktop, Figma, GIMP (notions)</p>
+            </div>
+        </section>
+
+        <section class="apropos" id="apropos">
+            <div class="line-title"></div>
+            <h2><span>A</span> Propos</h2>
+            <div class="apropos_wrap">
+                <div class="apropos_photo"></div>
+                <div class="apropos_text">
+                    <p>Passionné par le secteur de l'informatique et les nouvelles tendances web, j'ai suivi une formation qui m'a permis de conforter et de développer ma technicité, ma curiosité et ma créativité. Je souhaite aujourd'hui mettre mes compétences au service d'une entreprise humaine et contribuer activement à sa croissance en l'accompagnant dans la mise en place et/ou le développement de projets.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="line-title"></div>
+            <h2>Contact</h2>
+            <div class="contact_wrap">
+                <a href="#"><img src="Asset/icons/icon-mail.png" alt=""> flopereira75@gmail.com</a>
+                <a href="#"><img src="Asset/icons/icons-github.png" alt=""> github.com/FloPereira75</a>
+                <a href="#"><img src="Asset/icons/icons-linkedin.png" alt=""> linkedin.com/florian-pereira</a>
+            </div>
+            <div class="line-contact"></div>
+            <h4 class="go_cv">Consultez CV (PDF)</h4>
         </section>
 
         
-        <section id="realisations">
-            <div class="container">
-                <div class="white-divider"></div>
-                <div class="heading">
-                    <h2>Réalisations</h2>
-                </div>
-                <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="myCarousel" data-slide="0" class="active"></li>
-                        <li data-target="myCarousel" data-slide="1"></li>
-                        <li data-target="myCarousel" data-slide="2"></li>
-                        <li data-target="myCarousel" data-slide="3"></li>
-                        <li data-target="myCarousel" data-slide="4"></li>
-                        <!-- <li data-target="myCarousel" data-slide="5"></li> -->
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="badge-realisation item active">
-                            <img src="images/screen-burgercode.png" alt="Burger Code" class="img-realisation">
-                            <h3>Burger Code</h3>
-                            <p style="font-style: italic; font-size: 15px;">Simulation site web pour restaurant fast food.</p>
-                            <p>Cliquez <a href="Projets/BurgerCode/index.html" target="_blank" class="realisation-link">ici</a> pour y accéder (En cours de développement)</p>
-                            <div class="skill-tag-list" style="display: block;">
-                                <span class="skill-tag">HTML</span>
-                                <span class="skill-tag">CSS</span>
-                                <span class="skill-tag">Bootstrap</span>
-                                <span class="skill-tag">PHP</span>
-                                <span class="skill-tag">MySQL</span>
-                            </div>
-                        </div>
-                        <div class="badge-realisation item">
-                            <img src="images/screen-travelagency.png" alt="Travel Agency" class="img-realisation">
-                            <h3>Travel Agency</h3>
-                            <p style="font-style: italic; font-size: 15px;">Template landing page pour agence de voyage.</p>
-                            <p>Cliquez <a href="Projets/Travel-Agency/index.html" target="_blank" class="realisation-link">ici</a> pour y accéder</p>
-                            <div class="skill-tag-list" style="display: block;">
-                                <span class="skill-tag">HTML</span>
-                                <span class="skill-tag">CSS</span>
-                                <span class="skill-tag">GIMP</span>
-                            </div>
-                        </div>
-                        <!-- <div class="badge-realisation item">
-                            <img src="images/screen-thechamps.png" alt="The Champs" class="img-realisation">
-                            <h3>The Champs</h3>
-                            <p style="font-style: italic; font-size: 15px;">Revisitez l'histoire des plus grands footballeurs de ces 3 dernières décennies !</p>
-                            <p>Cliquez <a href="Projets/The-Champs/index.html" target="_blank" class="realisation-link">ici</a> pour y accéder (En cours de développement !)</p>
-                            <div class="skill-tag-list" style="display: block;">
-                                <span class="skill-tag">HTML</span>
-                                <span class="skill-tag">CSS</span>
-                            </div>
-                        </div> -->
-                        <div class="badge-realisation item">
-                            <img src="images/screen_snake-game.png" alt="Snake Game" class="img-realisation">
-                            <h3>Snake Game</h3>
-                            <p style="font-style: italic; font-size: 15px;">Retour du grand jeu d'arcade... Combien de pommes peux tu manger? </p>
-                            <p>Cliquez <a href="Projets/Snake-Game/index.html" target="_blank" class="realisation-link">ici</a> pour y accéder (Compatible desktop uniquement)</p>
-                            <div class="skill-tag-list" style="display: block;">
-                                <span class="skill-tag">HTML</span>
-                                <span class="skill-tag">CSS</span>
-                                <span class="skill-tag">JavaScript</span>
-                            </div>
-                        </div>
-                        <div class="badge-realisation item">
-                            <img src="images/screen_tape-taupe.png" alt="Tape Taupe" class="img-realisation">
-                            <h3>Tape-Taupe</h3>
-                            <p style="font-style: italic; font-size: 15px;">Vous avez 10 secondes pour dégommer le plus de taupe.</p>
-                            <p>Cliquez <a href="Projets/Tape-taupe/index.html" target="_blank" class="realisation-link">ici</a> pour y accéder (Compatible desktop uniquement)</p>
-                            <div class="skill-tag-list" style="display: block;">
-                                <span class="skill-tag">HTML</span>
-                                <span class="skill-tag">CSS</span>
-                                <span class="skill-tag">JavaScript</span>
-                            </div>
-                        </div>
-                        <div class="badge-realisation item">
-                            <img src="images/kiloren.png" alt="Star Wars test" class="img-realisation">
-                            <h3>Star Wars Website</h3>
-                            <p style="font-style: italic; font-size: 15px;">Site Star Wars</p>
-                            <p>Cliquez <a href="Projets/Prisma Media/index.html" target="_blank" class="realisation-link">ici</a> pour y accéder</p>
-                            <div class="skill-tag-list" style="display: block;">
-                                <span class="skill-tag">HTML</span>
-                                <span class="skill-tag">CSS</span>
-                                <span class="skill-tag">JavaScript</span>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#myCarousel" class="left carousel-control" data-slide="prev" role="button">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a href="#myCarousel" class="right carousel-control" data-slide="next" role="button">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                </div>
-            </div>
-        </section>
+    </main>
+    
 
-        <section id="contact">
-            <div class="container">
-                <div class="gold-divider"></div>
-                <div class="heading">
-                    <h2>Contact</h2>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3 col-xs-6">
-                        <a href="docs/cv_flo.pdf" target="_blank" class="thumbnail">
-                        <img src="images/see_cv.jpg" alt="twitter video"></a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <a href="https://www.linkedin.com/in/florian-pereira/" target="_blank" class="thumbnail">
-                        <img src="images/LinkedIn-2.jpg" alt="goole"></a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <a href="https://github.com/FloPereira75" target="_blank" class="thumbnail">
-                        <img src="images/github.png" alt="twitter video"></a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <a href="mailto:flopereira75@gmail.com" target="_blank" class="thumbnail">
-                        <img src="images/mail.jpg" alt="gmail"></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <footer>
+        <p>Copyright 2021 © Florian Pereira</p>
+        <div class="arrow-up"><img src="Asset/icons/icon-arrow-up.png" alt=""></div>
+    </footer>
 
-        <footer class="text-center">
-            <a href="#about">
-                <span class="glyphicon glyphicon-chevron-up"></span>
-            </a>
-            <h5>Copyright 2020 © Florian Pereira</h5>
-        </footer>
 
-    </body>
+
+
+
+</body>
 </html>
