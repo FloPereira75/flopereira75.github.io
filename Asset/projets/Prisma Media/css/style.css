@@ -1,0 +1,325 @@
+/**** GENERAL ****/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+
+/*************************** DESKTOP ********************************/
+
+
+/**** HEADER ****/
+
+.starwars-parallax {
+    width: 100%;
+    height: 500px;
+}
+
+.close-btn {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+}
+
+/**** MENU ****/
+
+.header_menu  {
+    width: 100%;
+    text-align: center;
+    height: 55px;
+    background: rgb(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 100;
+}
+
+.header_menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 15px 0 0 0;
+}
+
+.header_menu ul li {
+    display: inline-block;
+    margin-right: 33px;
+    letter-spacing: 3px;
+}
+
+.header_menu ul li:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.header_menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/**** PREMIER ARTICLE ****/
+    
+.article-principal {
+    margin: 100px 130px;
+    font-size: 18px;
+}
+
+.div-article-principal_content {
+    width: 380px;
+}
+
+.article-principal_content {
+    line-height: 22px;
+}
+
+.article-principal_image {
+    height: 600px;
+    width: 300px;
+    background-image: url(../Asset/Assets/battlefront.jpg);
+    position: sticky;
+    top: 0;
+}
+
+/**** KILOREN ****/
+
+.kiloren-parallax {
+    width: 100%;
+    height: 500px;
+}
+
+/**** SECOND ARTICLE ****/
+
+.article-secondary {
+    margin: 100px 130px;
+    font-size: 14px;
+}
+
+.article-secondary_image {
+    background-image: url(../Asset/Assets/r2d2_c3p0.jpg);
+    height: 290px;
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+
+.article-secondary_content {
+    line-height: 24px;
+}
+
+.br {
+    display: none; 
+}
+
+.article-secondary_title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/**** STORMTROOPER ****/
+
+.stormtrooper-parallax {
+    height: 250px;
+    width: 100%;
+}
+
+/**** FOOTER ****/
+
+.footer {
+    background-image: url(../Asset/Assets/darthvader_2x.jpg);
+    height: 272px;
+    background-size: 100% 100%;
+    background-position: center;
+    color: #9B9B9B;
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.lucasfilm-right {
+    margin: 0;
+    font-size: 14px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.footer-right {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer-right_link {
+    width: 200px;
+}
+
+.footer-right_network {
+    width: 200px;
+}
+
+.footer-right_link a {
+    color: #9B9B9B;
+}
+
+
+/***************************** MOBILE  ****************************/
+
+@media (max-width: 768px) {
+
+    .wrapper {
+        margin: auto 33px;
+    }
+
+    /**** HEADER ****/
+
+    .starwars-parallax {
+        background-size: 140% 100% !important;
+    }
+
+
+    /**** MENU ****/
+
+    .close-btn {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        display: block;
+    }
+
+    .menu-btn {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: block;
+    }
+
+    .header_menu {
+        background-image: url(../Asset/Assets/header-bg.png);
+        height: 600px;
+        background-position: center;
+        background-size: cover;
+        color: #fff;
+        padding-top: 50px;
+        font-size: 20px;
+        text-align: center;
+        position: absolute;
+        display: none;
+    }
+
+    .header_menu ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .header_menu ul li {
+        margin-bottom: 30px;
+        margin-right: auto;
+        display: block;
+    }
+
+    .header_menu_link {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+
+    /**** ARTICLE PRINCIPAL ****/
+    
+    .article-principal {
+        margin-top: 30px;
+        margin-bottom: 150px;
+        text-align: center;
+    }
+
+    .article-principal_content {
+        line-height: 22px;
+    }
+
+    .article-principal_image {
+        display: none;
+    }
+
+    /**** IMAGE DE COVER ENTRE ARTICLE ****/
+
+    .kiloren-parallax {
+        background-size: 120% 100% !important;
+    }
+
+    /**** SECOND ARTICLE ****/
+
+    .article-secondary {
+        margin-top: 100px;
+    }
+
+    .article-secondary_title {
+        line-height: 22px;
+    }
+
+    .article-secondary_image {
+        background-position: center;
+        background-size: 100% 100%;
+        height: 290px;
+        width: 100%;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    .br {
+        display: block;
+    }
+
+    /**** STORMTROOPER ****/
+
+    .stormtrooper-parallax {
+        background-size: 120% 100% !important;
+    }
+
+    /**** FOOTER ****/
+
+    .lucasfilm-right {
+        display: none;
+    }
+
+    .footer-right {
+        margin-top: 0;
+        flex-wrap: wrap;
+        padding-top: 40px;
+    }
+
+    .footer-right_link {
+        width: 50%;
+    }
+
+    .footer-right_network {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 60px;
+    }
+
+    .footer-right_network a:nth-child(-n+2) {
+        margin-right: 20px;
+    }
+}
+
+

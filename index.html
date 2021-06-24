@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <title>Portfolio - Florian Pereira</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,8 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;900&display=swap" rel="stylesheet">
 </head>
-<body>
-
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -34,149 +33,167 @@
             </div>
         </div>
     </nav>
-    
     <div class="home" id="home">
-        <h1>Florian Pereira</h1>
-        <h2>Développeur Front-End</h2>
+            <h1>Florian Pereira</h1>
+            <h2>Développeur Front-End</h2>
     </div>
-
-    <main class="wrap">
+    <main class="conteneur">
         <section class="portfolio" id="portfolio">
-            <div class="line-title"></div>
-            <h2><span>Mon</span> Portfolio</h2>
-            <div class="card">
-                <div class="card_img _ba"></div>
-                <div class="card_infos">
-                    <p class="card_title">Base Apparel</p>
-                    <p>Challenge proposé par frontendmentor.io</p>
-                    <p>Lien vers le github : LIEN A METTRE</p>
-                </div>
+            <div class="section_title">
+                <div class="title_line"></div>
+                <h3>Mon <span>Portfolio</span></h3>
             </div>
-            <div class="card">
-                <div class="card_img _hd"></div>
-                <div class="card_infos">
-                    <p class="card_title">Huddle</p>
-                    <p>Challenge proposé par frontendmentor.io</p>
-                    <p>Lien vers le github : LIEN A METTRE</p>
+            <div class="portfolio_wrap">
+                <div class="portfolio_wrap_top">
+                    <div class="portfolio_card mg-bt">
+                        <div class="card_img ba_img"></div>
+                        <div class="card_content">
+                            <h4>Base Apparel</h4>
+                            <p>Landing Page (HTML/CSS & JS)</p>
+                            <p>Challenge proposé par <a href="https://www.frontendmentor.io/" target="_blank" class="fm-link">FrontEnd Mentor</a></p>
+                            <a href="https://base-apparel-challenge-mu.vercel.app/" target="_blank" class="go_site_btn">Voir site</a>
+                        </div>
+                    </div>
+                    <div class="portfolio_card mg-bt">
+                        <div class="card_img hd_img"></div>
+                        <div class="card_content">
+                            <h4>Huddle</h4>
+                            <p>Landing Page (HTML/CSS)</p>
+                            <p>Challenge proposé par <a href="https://www.frontendmentor.io/" target="_blank" class="fm-link">FrontEnd Mentor</a></p>
+                            <a href="https://huddle-challenge-nine.vercel.app/" target="_blank" class="go_site_btn">Voir site</a>
+                        </div>
+                    </div>
+                    <div class="portfolio_card">
+                        <div class="card_img pg_img"></div>
+                        <div class="card_content">
+                            <h4>Ping</h4>
+                            <p>Landing Page (HTML/CSS & JS)</p>
+                            <p>Challenge proposé par <a href="https://www.frontendmentor.io/" target="_blank" class="fm-link">FrontEnd Mentor</a></p>
+                            <a href="https://ping-coming-soon-page-lovat.vercel.app/" target="_blank" class="go_site_btn">Voir site</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card_img _pg"></div>
-                <div class="card_infos">
-                    <p class="card_title">Ping</p>
-                    <p>Challenge proposé par frontendmentor.io</p>
-                    <p>Lien vers le github : LIEN A METTRE</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_img _sp"></div>
-                <div class="card_infos">
-                    <p class="card_title">Social Proof</p>
-                    <p>Challenge proposé par frontendmentor.io</p>
-                    <p>Lien vers le github : LIEN A METTRE</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_img _sglp"></div>
-                <div class="card_infos">
-                    <p class="card_title">Single Price</p>
-                    <p>Challenge proposé par frontendmentor.io</p>
-                    <p>Lien vers le github : LIEN A METTRE</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_img _sw"></div>
-                <div class="card_infos">
-                    <p class="card_title">Star Wars</p>
-                    <p>Challenge proposé par frontendmentor.io</p>
-                    <p>Lien vers le github : LIEN A METTRE</p>
+                <div class="portfolio_wrap_down">
+                    <div class="portfolio_card mg-bt">
+                        <div class="card_img social_img"></div>
+                        <div class="card_content">
+                            <h4>Social Proof</h4>
+                            <p>Landing Page (HTML/CSS)</p>
+                            <p>Challenge proposé par <a href="https://www.frontendmentor.io/" target="_blank" class="fm-link">FrontEnd Mentor</a></p>
+                            <a href="https://social-proof-chi.vercel.app/" target="_blank" class="go_site_btn">Voir site</a>
+                        </div>
+                    </div>
+                    <div class="portfolio_card mg-bt">
+                        <div class="card_img single_img"></div>
+                        <div class="card_content">
+                            <h4>Single Price</h4>
+                            <p>Landing Page (HTML/CSS)</p>
+                            <p>Challenge proposé par <a href="https://www.frontendmentor.io/" target="_blank" class="fm-link">FrontEnd Mentor</a></p>
+                            <a href="https://single-price-phi.vercel.app/" target="_blank" class="go_site_btn">Voir site</a>
+                        </div>
+                    </div>
+                    <div class="portfolio_card">
+                        <div class="card_img sw_img"></div>
+                        <div class="card_content">
+                            <h4>Star Wars</h4>
+                            <p>Landing Page (HTML/CSS & JS)</p>
+                            <p>Réalisation perso</p>
+                            <a href="Asset/projets/Prisma Media/index.html" target="_blank" class="go_site_btn mtop">Voir site</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
         <section class="parcours" id="parcours">
-            <div class="line-title"></div>
-            <h2><span>Mon</span> Parcours</h2>
-            <h3>Formations</h3>
-            <div class="xp_card">
-                <p class="xp_card_title">Développeur d'applications web</p>
-                <p class="xp_card_org">CNAM <span>(Paris)</span></p>
-                <p class="xp_card_date">2018-2019</p>
-                <p class="xp_card_content_title">Formation de 800h :</p>
-                <p class="xp_card_content_text">- Développement de projets (sites web) en groupe.</p>
-                <p class="xp_card_content_text">- Compétences acquises : Autonomie, organisation, HTML/CSS, Javascript, Vue.js, Node/Express.js, Git, Github</p>
-                <p class="xp_card_content_title">Participations au(x) évènement(s) :</p>
-                <p class="xp_card_content_text">- Hackathon Femmes & Entrepreneuriat en partenariat avec TharGo et les Déterminés.</p>
+            <div class="section_title">
+                <div class="title_line"></div>
+                <h3>Mon <span>Parcours</span></h3>
             </div>
-            <div class="xp_card">
-                <p class="xp_card_title">Baccalauréat STG spécialité Marketing</p>
-                <p class="xp_card_org">Lycée Henri Bergson <span>(Paris)</span></p>
-                <p class="xp_card_date">2008-2009</p>
-            </div>
-            <h3>Expériences</h3>
-            <div class="xp_card">
-                <p class="xp_card_title">Stagiaire développeur front-end</p>
-                <p class="xp_card_org">InterStis <span>(Saint Denis)</span></p>
-                <p class="xp_card_date">2019-2020 (6 mois)</p>
-                <p class="xp_card_content_title">Service de plateforme collaborative en ligne</p>
-                <p class="xp_card_content_text">Equipe de 3 devs (DT, Fullstack et moi)</p>
-                <p class="xp_card_content_text">- Contribuer activement à l'optimisation du site</p>
-                <p class="xp_card_content_text">- Intégration de contenus sur la plateforme web InterStis</p>
-                <p class="xp_card_content_text">- Refonte d'éléments de la plateforme web InterStis</p>
-            </div>
-            <div class="xp_card">
-                <p class="xp_card_title">Gestionnaire administratif</p>
-                <p class="xp_card_org">RIVP <span>(Paris)</span></p>
-                <p class="xp_card_date">2016-2018</p>
-                <p class="xp_card_content_title">Bailleur social de la ville de Paris</p>
-                <p class="xp_card_content_text">Gestion des dossiers locataires : </p>
-                <p class="xp_card_content_text">- Réception futurs locataires, visite appartements, montage de dossiers, signature de bail, médiations litiges...</p>
-                <p class="xp_card_content_text">Utilisation Pack Office et outils collaboratifs dédiés</p>
-            </div>
-            <h3>Compétences</h3>
-            <div class="xp_card">
-                <p class="xp_card_title">Langages, Frameworks & Librarys : </p>
-                <p class="xp_card_content_text">HTML, CSS, JavaScript, Php, jQuery, Bootstrap, React (en cours)</p>
-                <p class="xp_card_title">Outils informatiques & logiciels :</p>
-                <p class="xp_card_content_text">Visual Studio Code, Git, Github, Github Desktop, Figma, GIMP (notions)</p>
+            <div class="form-xp-wrap">
+                <div class="formations-cptences">
+                    <h4 class="form-xp-cp-title">Formations</h4>
+                    <div class="form-xp-cp-card">
+                        <p class="form-xp-cp-card_title">Développeur d'applications web</p>
+                        <p class="form-xp-cp-card_org">CNAM <span>(Paris)</span></p>
+                        <p class="form-xp-cp-card_date">2018-2019</p>
+                        <p class="form-xp-cp-card_content_title">Formation de 800h :</p>
+                        <p class="form-xp-cp-card_content_text">- Développement de projets (sites web) en groupe</p>
+                        <p class="form-xp-cp-card_content_text">- Compétences acquises : Softskills (autonomie, organisation), HTML/CSS, Javascript, Vue.js, Node/Express.js, Git, Github</p>
+                        <p class="form-xp-cp-card_content_title">Participations au(x) évènement(s) :</p>
+                        <p class="form-xp-cp-card_content_text">- Hackathon Femmes & Entreprenariat en partenariat avec TharGo et Les Déterminés.</p>
+                    </div>
+                    <div class="form-xp-cp-card">
+                        <p class="form-xp-cp-card_title">Baccalauréat STG spécalité Marketing</p>
+                        <p class="form-xp-cp-card_org">Lycée Henri Bergson <span>(Paris)</span></p>
+                        <p class="form-xp-cp-card_date">2008-2009</p>
+                    </div>
+                    <h4 class="form-xp-cp-title martop">Compétences</h4>
+                    <div class="form-xp-cp-card">
+                        <p class="form-xp-cp-card_title">Langages, Frameworks & Librarys :</p>
+                        <p class="form-xp-cp-card_content_text">HTML, CSS, JavaScript, Php, jQuery, Bootstrap, React (en cours)</p>
+                        <p class="form-xp-cp-card_title">Outils informatiques & logiciels :</p>
+                        <p class="form-xp-cp-card_content_text">Visual Studio Code, Git, Github, Github Desktop, Figma, GIMP (notions)</p>
+                    </div>
+                </div>
+                <div class="experiences">
+                    <h4 class="form-xp-cp-title">Expériences</h4>
+                    <div class="form-xp-cp-card">
+                        <p class="form-xp-cp-card_title">Stagiaire développeur front-end</p>
+                        <p class="form-xp-cp-card_org">InterStis <span>(Saint Denis)</span></p>
+                        <p class="form-xp-cp-card_date">2019-2020 (6 mois)</p>
+                        <p class="form-xp-cp-card_content_title">Service de plateforme collaborative en ligne</p>
+                        <p class="form-xp-cp-card_content_text">Equipe de 3 devs (DT, Fullstack et moi)</p>
+                        <p class="form-xp-cp-card_content_text">- Contribuer activement à l'optimisation du site</p>
+                        <p class="form-xp-cp-card_content_text">- Intégration de contenus sur la plateforme web InterStis</p>
+                        <p class="form-xp-cp-card_content_text">- Refonte d'éléments de la plateforme web InterStis</p>
+                    </div>
+                    <div class="form-xp-cp-card">
+                        <p class="form-xp-cp-card_title">Gestionnaire administratif</p>
+                        <p class="form-xp-cp-card_org">RIVP <span>(Paris)</span></p>
+                        <p class="form-xp-cp-card_date">2016-2018</p>
+                        <p class="form-xp-cp-card_content_title">Bailleur social de la ville de Paris</p>
+                        <p class="form-xp-cp-card_content_text">Gestion des dossiers locataires :</p>
+                        <p class="form-xp-cp-card_content_text">- Réception futurs locataires, visite appartements, montage de dossiers, signature de bail, médiations litiges...</p>
+                        <p class="form-xp-cp-card_content_text">- Utilisation Pack Office et outils collaboratifs dédiés</p>
+                    </div>
+                </div>
             </div>
         </section>
-
         <section class="apropos" id="apropos">
-            <div class="line-title"></div>
-            <h2><span>A</span> Propos</h2>
-            <div class="apropos_wrap">
-                <div class="apropos_photo"></div>
-                <div class="apropos_text">
+            <div class="section_title">
+                <div class="title_line"></div>
+                <h3>A <span>Propos</span></h3>
+            </div>
+            <div class="apropos-wrap">
+                <div class="apropos-photo"></div>
+                <div class="apropos-text">
                     <p>Passionné par le secteur de l'informatique et les nouvelles tendances web, j'ai suivi une formation qui m'a permis de conforter et de développer ma technicité, ma curiosité et ma créativité. Je souhaite aujourd'hui mettre mes compétences au service d'une entreprise humaine et contribuer activement à sa croissance en l'accompagnant dans la mise en place et/ou le développement de projets.</p>
                 </div>
             </div>
         </section>
-
         <section class="contact" id="contact">
-            <div class="line-title"></div>
-            <h2>Contact</h2>
-            <div class="contact_wrap">
-                <a href="#"><img src="Asset/icons/icon-mail.png" alt=""> flopereira75@gmail.com</a>
-                <a href="#"><img src="Asset/icons/icons-github.png" alt=""> github.com/FloPereira75</a>
-                <a href="#"><img src="Asset/icons/icons-linkedin.png" alt=""> linkedin.com/florian-pereira</a>
+            <div class="section_title">
+                <div class="title_line"></div>
+                <h3><span>Contact</span></h3>
             </div>
-            <div class="line-contact"></div>
-            <h4 class="go_cv">Consultez CV (PDF)</h4>
+            <div class="contact-wrap">
+                <div class="contact-link">
+                    <a href="mailto:flopereira75@gmail.com"><img src="Asset/icons/icon-mail.png" alt="email icon"> flopereira75@gmail.com</a>
+                    <a href="https://github.com/FloPereira75" target="_blank"><img src="Asset/icons/icons-github.png" alt="github icon"> github.com/FloPereira75</a>
+                    <a href="https://www.linkedin.com/in/florian-pereira/" target="_blank"><img src="Asset/icons/icons-linkedin.png" alt="linkedin icon"> linkedin.com/florian-pereira</a>
+                </div>
+                <div class="contact-cv">
+                    <a href="Asset/docs/cv-florian-pereira.pdf" target="_blank">Consultez-cv (PDF)</a>
+                </div>
+            </div>
         </section>
-
-        
     </main>
-    
-
     <footer>
         <p>Copyright 2021 © Florian Pereira</p>
-        <div class="arrow-up"><img src="Asset/icons/icon-arrow-up.png" alt=""></div>
+        <div class="arrow-up">
+            <a href="#home"><img src="Asset/icons/icon-arrow-up.png" alt=""></a> 
+        </div>
     </footer>
-
-
-
-
-
+    <script src="js/main.js"></script>
 </body>
 </html>
