@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .home {
-    background: url(../Asset/image/bg2.jpg);
+    background: url(../Asset/image/backg5.jfif);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -124,6 +124,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 50px;
 }
 
+.portfolio_wrap_middle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
 .portfolio_wrap_down {
     display: flex;
     justify-content: space-between;
@@ -140,6 +146,18 @@ h1, h2, h3, h4, h5, h6 {
     height: 300px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+.cc_img {
+    background: url(../Asset/image/column-card.png);
+    background-size: 100% 100%;
+}
+.pcc_img {
+    background: url(../Asset/image/stats-preview-card.png);
+    background-size: 100% 100%;
+}
+.pt_img {
+    background: url(../Asset/image/pt-bckg.png);
+    background-size: 100% 100%;
 }
 .ba_img {
     background: url(../Asset/image/base-apparel.jpg);
@@ -474,6 +492,10 @@ footer p {
         margin: 50px 0;
     }
     .portfolio_wrap_top {
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+    .portfolio_wrap_middle {
         flex-direction: column;
         margin-bottom: 25px;
     }
