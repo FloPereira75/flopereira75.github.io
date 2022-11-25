@@ -147,37 +147,44 @@ h1, h2, h3, h4, h5, h6 {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-.cc_img {
-    background: url(../Asset/image/column-card.png);
-    background-size: 100% 100%;
+.fylo_img {
+    background: url(../Asset/image/fylo.jpg);
+    background-size: cover;
+    background-position: center;
 }
-.pcc_img {
-    background: url(../Asset/image/stats-preview-card.png);
-    background-size: 100% 100%;
+.clipb_img {
+    background: url(../Asset/image/clipboard.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.newshp_img {
+    background: url(../Asset/image/newshp.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .pt_img {
-    background: url(../Asset/image/pt-bckg.png);
-    background-size: 100% 100%;
-}
-.ba_img {
-    background: url(../Asset/image/base-apparel.jpg);
-    background-size: 100% 100%;
+    background: url(../Asset/image/pjt.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .hd_img {
-    background: url(../Asset/image/huddle.jpg);
+    background: url(../Asset/image/advgen.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.grid_img {
+    background: url(../Asset/image/gridsect.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.portfolio_img {
+    background: url(../Asset/image/newportfolio.png);
     background-size: 100% 100%;
 }
-.pg_img {
-    background: url(../Asset/image/ping.jpg);
-    background-size: 100% 100%;
-}
-.social_img {
-    background: url(../Asset/image/social-proof.jpg);
-    background-size: 100% 100%;
-}
-.single_img {
-    background: url(../Asset/image/single-price.jpg);
-    background-size: 100% 100%;
+.interact_img {
+    background: url(../Asset/image/interact-compo.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .sw_img {
     background: url(../Asset/image/star-wars.png);
@@ -307,6 +314,8 @@ h1, h2, h3, h4, h5, h6 {
     background: url(../Asset/image/moi.jpg);
     background-size: cover;
     background-position: center;
+    border-radius: 25px;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 75%);
 }
 
 .apropos-text {
@@ -314,6 +323,9 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     text-align: justify;
+}
+.apropos-text p {
+    font-size: 1.5em;
 }
 
 /* CONTACT */
@@ -543,7 +555,8 @@ footer p {
     }
     .contact-link {
         width: 100%;
-        height: 125px;
+        height: auto;
         flex-direction: column;
+        gap: 10px;
     }
 }  
